@@ -10,4 +10,4 @@ Bem-vindo ao meu repositório de exercícios de Java! Aqui você encontrará uma
 
 ## Sobre
 
-Dart é uma linguagem de programação desenvolvida pela Google, usada principalmente para construir aplicações móveis, web e de servidor. Este repositório contém exercícios práticos que ajudam a entender os conceitos fundamentais da linguagem.
+JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web, permitindo a criação de páginas interativas e dinâmicas. Este repositório contém exercícios práticos que ajudam a entender os conceitos fundamentais da linguagem.
