@@ -1,2 +1,2 @@
-let lista = ["Jimmy", "Diego", "Vitor"];
+let lista = ["Jimmy", "Diego", "Vitinho"];
 console.log(lista.reverse())
