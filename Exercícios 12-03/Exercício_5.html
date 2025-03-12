@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h1>Experimente adicionar alguns itens em uma lista</h1>
+    <input type="text" id="itemInput" placeholder="Insira um item">
+    <button id="addButton">Colocar</button>
+    <ul id="itemList"></ul>
+
+    <script>
+        document.getElementById('addButton').addEventListener('click', function() {
+            const input = document.getElementById('itemInput');
+            const itemText = input.value;
+            if (itemText.trim() !== '') {
+                const li = document.createElement('li');
+                li.innerText = itemText;
+                document.getElementById('itemList').appendChild(li);
+                input.value = '';
+            }
+        });
+    </script>
+</body>
+</html></html>

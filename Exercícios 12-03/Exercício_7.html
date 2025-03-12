@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7: Modificação de Atributos</title>
+
+</head>
+<body>
+    <h1>Modificação de Atributos</h1>
+    <img id="imagem" src="" alt="Imagem">
+    <br>
+    <button onclick="mudarImagem('../Media/Philipe Pepper.jpg')">Imagem 1</button>
+    <button onclick="mudarImagem('../Media/monquavious tangerine.jpg')">Imagem 2</button>
+    <button onclick="mudarImagem('../Media/Darius belpeppa.jpg')">Imagem 3</button>
+
+    <script>
+        function mudarImagem(novaSrc) {
+            document.getElementById('imagem').src = novaSrc;
+        }
+    </script>
+</body>
+</html>

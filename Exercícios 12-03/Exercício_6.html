@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <style>
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício 6: Alternância de Visibilidade</h1>
+    <div id="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS8UeRoXt5kJwCfev6n4RxzR2dTooRRCvupg&s" alt="">
+    </div>
+    <button id="toggleButton">Mostrar/Esconder</button>
+
+    <script>
+        const content = document.getElementById('content');
+        const toggleButton = document.getElementById('toggleButton');
+
+        toggleButton.addEventListener('click', () => {
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html></div>
