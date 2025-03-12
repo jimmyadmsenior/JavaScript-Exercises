@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <style>
+        .meus-paragrafos {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Parágrafos</h1>
+    <p class="meus-paragrafos">Jimmmy</p>
+    <p class="meus-paragrafos">Diegin</p>
+    <p class="meus-paragrafos">Vitin</p>
+    <p class="meus-paragrafos">Vitinho</p>
+    <button onclick="alterarCor()">Alterar Cor dos Parágrafos</button>
+
+    <script>
+        function alterarCor() {
+            const paragrafos = document.getElementsByClassName('meus-paragrafos');
+            for (let i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].style.color = 'green';
+            }
+        }
+    </script>
+</body>
+</html>

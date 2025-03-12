@@ -1,0 +1,49 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração de Estilos do Triângulo</title>
+    <style>
+        .triangulo {
+            width: 0;
+            height: 0;
+            border-left: 90px solid transparent;
+            border-right: 159px solid transparent;
+            border-bottom: 50px solid #3498db; /* Cor inicial */
+            margin: 30px auto;
+        }
+        button {
+            margin:4px;
+            padding: 5px 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modifique como quiser o triângulo abaixo</h1>
+    <div class="triangulo" id="triangulo"></div>
+    <button onclick="alterarCor()">Mude a cor de fundo do triângulo</button>
+    <button onclick="alterarTamanho()">Mude o tamanho do triângulo</button>
+    <button onclick="alterarBorda()">Mude a borda do triângulo</button>
+
+    <script>
+        function alterarCor() {
+            const triangulo = document.getElementById('triangulo');
+            triangulo.style.borderBottomColor = 'green';
+        }
+
+        function alterarTamanho() {
+            const triangulo = document.getElementById('triangulo');
+            triangulo.style.borderTop = '10px solid transparent';
+            triangulo.style.borderLeft = '75px solid transparent';
+            triangulo.style.borderRight = '20px solid transparent';
+            triangulo.style.borderBottom = '150px solid #3498db';
+        }
+
+        function alterarBorda() {
+            const triangulo = document.getElementById('triangulo');
+            triangulo.style.border = '20px solid black';
+        }
+    </script>
+</body>
+</html>
